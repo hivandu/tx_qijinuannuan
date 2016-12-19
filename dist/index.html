@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="maximum-dpr=2" name="flexible" />
+    <meta name="apple-touch-fullscreen" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title></title>
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="assets/stylesheets/app.min.css">
+    <!-- endinject -->
+    <style>
+        /*第一个是主要的，第二个是没有账号的*/
+        .swiper-wrapper {  display: block;  }
+        .scene08        {  display: none ;  }
+    </style>
+</head>
+<body>
+<!-- the class "content" is used for flexible plugin -->
+<div class="swiper-container content">
+    <!-- logo -->
+    <img src="assets/images/common/flippage.png" class="maozhua pa firstNo" width="26%" style="z-index: 4;right: -1%;bottom: -4%;" alt=""/>
+    <!-- 切换按钮 -->
+    <div class="imgSliderbtn2 pa" style="display: none">
+        <img src="assets/images/common/navi-arrow.png" class="pa sliderPrev" style="left: 3%" alt=""/>
+        <img src="assets/images/common/navi-arrow.png" class="pa sliderNext" style="right: 3%" alt=""/>
+    </div>
+    <div class="gril-warp" style="display: none"></div>
+    <div class="swiper-wrapper"><!-- 有账号的主要内容 -->
+        <!-- scene01 -->
+        <div class="swiper-slide scene scene01" >
+            <img src="assets/images/common/logo.png" class="logo pa" width="26%" style="z-index: 2;left: 7%;top: 3%;" alt=""/>
+            <img src="assets/images/common/diaryside.png"   class="side pa"               style="z-index: 6;"                  alt=""/>
+            <img src="assets/images/common/btn-musicon.png" class="audio-logo active"     alt=""/>
+            <img src="assets/images/page1/bg.jpg"           width="100%"                  alt=""/>
+            <img src="assets/images/page1/lace1.png"        data-load="load" width="100%"                   style="left: 0;top: 0;"/>
+            <img src="assets/images/page1/lace1.png"        data-load="load" width="100%"                   style="left: 0;bottom: 0;-webkit-transform:  scaleY(-1);"/>
+            <img src="assets/images/page1/lace2.png"        data-load="load" width="100%" class="lace"      style="left: 0;"/>
+            <img src="assets/images/page1/lace2.png"        data-load="load" width="100%" class="lace"      style="right: 0;-webkit-transform:  scaleX(-1);"/>
+            <img src="assets/images/page1/title.png"                                      class="title"    data-load="load"    alt=""/>
+            <a href="#" class="logQ">
+            <img src="assets/images/page1/btn-qqlogin.png"                                class="btn btnQQ" data-load="load" style="left: 6%" width="100%"     alt=""/>
+            </a>
+            <a href="#" class="logW">
+            <img src="assets/images/page1/btn-wechatlogin-.png"                           class="btn btnW" data-load="load" style="right: 6%" width="100%" alt=""/>
+            </a>
+        </div>
+        <!-- scene02 -->
+        <div class="swiper-slide scene scene02">
+            <img src="assets/images/common/logo.png" class="logo pa" width="26%" style="z-index: 2;left: 7%;top: 3%;" alt=""/>
+            <!-- 进入游戏的按钮 -->
+            <a href="#" class="">
+                <img src="assets/images/common/btn-joingame.png" class=" pa" width="40%" style="z-index: 999;right: 3%;top:0.8%;" alt=""/>
+            </a>
+            <img src="assets/images/page2/bg-diarypaper.jpg"    width="100%" alt=""/>
+            <img src="assets/images/page2/type1.png"            class="type1" alt=""/>
+            <img src="assets/images/page2/type2.png"            class="type2" alt=""/>
+            <img src="assets/images/page2/type3.png"            class="type3" alt=""/>
+            <img src="assets/images/page2/type4.png"            class="type4" alt=""/>
+            <img src="assets/images/page2/type5.png"            class="type5" alt=""/>
+            <img src="assets/images/page2/type6.png"            class="type6" alt=""/>
+            <img src="assets/images/page2/type7.png"            class="type7" alt=""/>
+            <img src="assets/images/page2/type8.png"            class="type8" alt=""/>
+            <!--日期内容-->
+            <div class="text-warp">
+                <p class="text month-number">6</p>
+                <p class="text day-number">11</p>
+            </div>
+            <img src="assets/images/page2/damiao.png"           class="miao" alt=""/>
+            <img src="assets/images/page2/sticker-nuannuan.png" class="people" alt=""/>
+            <img src="assets/images/common/diaryside.png"       class="side pa" style="z-index: 6;" alt=""/>
+        </div>
+        <!-- scene03 -->
+        <div class="swiper-slide scene scene03">
+            <img src="assets/images/common/logo.png"            class="logo pa" width="26%" style="z-index: 2;left: 7%;top: 3%;" alt=""/>
+            <!-- 进入游戏的按钮 -->
+            <a href="#" class="">
+                <img src="assets/images/common/btn-joingame.png"class=" pa" width="40%" style="z-index: 999;right: 3%;top:0.8%;" alt=""/>
+            </a>
+            <img src="assets/images/page3/bg-diarypaper.jpg"    class="pa" width="100%" alt=""/>
+            <img src="assets/images/page3/type-chapter1-6.png"  class="pa chapter chapter1" width="100%" alt=""/>
+            <img src="assets/images/page3/type-chapter7.png"    class="pa chapter chapter7" width="100%" alt=""/>
+            <img src="assets/images/page3/type-chapter8.png"    class="pa chapter chapter8" width="100%" alt=""/>
+            <img src="assets/images/page3/type-chapter9.png"    class="pa chapter chapter9" width="100%" alt=""/>
+            <img src="assets/images/page3/type-chapter10.png"   class="pa chapter chapter10" width="100%" alt=""/>
+            <!-- 玩家的通关数据 -->
+            <div class="userMapData-warp">
+                <img src="assets/images/imgMap/map-chapter1.png" class="userMapData" alt=""/>
+                <img src="assets/images/page3/pin.png"          class="pin" alt=""/>
+                <img src="assets/images/seal/seal-chapter1.png" class="seal" alt=""/>
+            </div>
+            <img src="assets/images/page3/typeend.png"          class="pa typeend" alt=""/>
+            <img src="assets/images/common/diaryside.png"       class="side pa" style="z-index: 6;" alt=""/>
+        </div>
+        <!-- scene04 -->
+        <div class="swiper-slide scene scene04">
+            <img src="assets/images/common/logo.png"            class="logo pa" width="26%" style="z-index: 2;left: 7%;top: 3%;" alt=""/>
+            <!-- 进入游戏的按钮 -->
+            <a href="#" class="">
+                <img src="assets/images/common/btn-joingame.png"class=" pa" width="40%" style="z-index: 999;right:3%;top:0.8%;" alt=""/>
+            </a>
+            <div id="imgIsleder2"                               class="page4wrapper" style="display:block;"></div>
+            <img src="assets/images/common/bg-diarypaper456.jpg"width="100%" alt=""/>
+            <img src="assets/images/page4/type1.png"            class="pa type1 type" alt=""/>
+            <img src="assets/images/page4/type2.png"            class="pa type2 type" alt=""/>
+            <img src="assets/images/page4/type3.png"            class="pa type3 type" alt=""/>
+            <img src="assets/images/page4/type4.png"            class="pa type4 type" alt=""/>
+            <img src="assets/images/page4/type5.png"            class="pa type5 type" alt=""/>
+            <img src="assets/images/page4/type6.png"            class="pa type6 type" alt=""/>
+            <img src="assets/images/page4/type7.png"            class="pa type7 type" alt=""/>
+            <div class="text-warp">
+                <p class="text clothes_number">11</p>
+                <p class= "text suit_number">21</p>
+            </div>
+            <img src="assets/images/common/diaryside.png"       class="side pa" style="z-index: 6;" alt=""/>
+        </div>
+        <!-- scene05 -->
+        <div class="swiper-slide scene scene05">
+            <img src="assets/images/common/logo.png"            class="logo pa" width="26%" style="z-index: 2;left: 7%;top: 3%;" alt=""/>
+            <!-- 进入游戏的按钮 -->
+            <a href="#" class="">
+                <img src="assets/images/common/btn-joingame.png"class=" pa" width="40%" style="z-index: 999;right:3%;top:0.8%;" alt=""/>
+            </a>
+            <img src="assets/images/page5/bgpaper.jpg"          class="pa" width="100%" alt=""/>
+            <img src="assets/images/page5/model.png"            class="pa model"  alt=""/>
+            <img src="assets/images/page5/type1.png"            class="pa type1 type"  alt=""/>
+            <img src="assets/images/page5/type2.png"            class="pa type2 type"  alt=""/>
+            <img src="assets/images/page5/type3.png"            class="pa type3 type"  alt=""/>
+            <img src="assets/images/page5/type4.png"            class="pa type4 type"  alt=""/>
+            <!-- 竞技场数据 -->
+            <div class="text-warp">
+                <p class="text arena-number">41</p>
+                <p class= "text overcome-number">23</p>
+            </div>
+            <img src="assets/images/common/diaryside.png"       class="side pa" style="z-index: 6;" alt=""/>
+        </div>
+         <!--scene06-->
+        <div class="swiper-slide scene scene06">
+            <img src="assets/images/common/logo.png"            class="logo pa" width="26%" style="z-index: 2;left: 7%;top: 3%;" alt=""/>
+            <!-- 进入游戏的按钮 -->
+            <a href="#" class="">
+                <img src="assets/images/common/btn-joingame.png" class=" pa" width="40%" style="z-index: 999;right: 3%;top:0.8%;" alt=""/>
+            </a>
+            <img src="assets/images/page6/bg-notype.jpg"         class="pa" width="100%" alt=""/>
+            <img src="assets/images/page6/type1.png"             class="pa type1 type"  alt=""/>
+            <img src="assets/images/page6/type2.png"             class="pa type2 type"  alt=""/>
+            <img src="assets/images/page6/type3.png"             class="pa type3 type"  alt=""/>
+            <img src="assets/images/page6/type4.png"             class="pa type4 type"  alt=""/>
+            <img src="assets/images/page6/type5.png"             class="pa type5 type"  alt=""/>
+            <img src="assets/images/page6/type6.png"             class="pa type6 type"  alt=""/>
+            <img src="assets/images/page6/type7.png"             class="pa type7 type"  alt=""/>
+            <img src="assets/images/page6/type8.png"             class="pa type8 type"  alt=""/>
+            <img src="assets/images/page6/type9.png"             class="pa type9 type"  alt=""/>
+            <img src="assets/images/page6/model1.png"            class="pa model model1"  alt=""/>
+            <img src="assets/images/page6/model2.png"            class="pa model model2"  alt=""/>
+            <!-- 评选赛和点赞 -->
+            <div class="text-warp">
+                <p class="text arena-number">41</p>
+                <p class= "text overcome-number">21113</p>
+            </div>
+            <img src="assets/images/common/diaryside.png"        class="side pa" style="z-index: 6;" alt=""/>
+        </div>
+        <!-- scene07 -->
+        <div class="swiper-slide scene scene07">
+            <img src="assets/images/page7/bg.jpg"               width="100%" alt=""/>
+            <img src="assets/images/page7/type.png"             class="type" alt=""/>
+            <img src="assets/images/page7/giftlist.png"         class="giftlist" alt=""/>
+            <img src="assets/images/page7/btn-getgift.png"      class="btn-getgift" alt=""/>
+            <img src="assets/images/page7/btn-miracletour.png"  class="miracletour" alt=""/>
+            <!--日期和小时-->
+            <div class="text-warp">
+                <p class="text month-number">11</p>
+                <p class="text day-number">11</p>
+                <p class="text hour-number">6666</p>
+            </div>
+            <img src="assets/images/common/diaryside.png"       class=" pa border" style="height: 96%;top: 2%;z-index: 12;right: 0;" alt=""/>
+            <img src="assets/images/page1/lace1.png"            data-load="load" class="pa" width="100%" style="left: 0;top: 0;"/>
+            <img src="assets/images/page1/lace1.png"            data-load="load" class="pa" width="100%" style="left: 0;bottom: 0;-webkit-transform:  scaleY(-1);"/>
+            <img src="assets/images/page1/lace2.png"            data-load="load"  class="lace pa" style="left: 0;"/>
+            <img src="assets/images/page1/lace2.png"            data-load="load"  class="lace pa" style="right: 0;-webkit-transform:  scaleX(-1);"/>
+        </div>
+    </div>
+</div>
+<!--没有账号跳到这里-->
+<div class="n-scene scene08">
+    <img src="assets/images/common/btn-musicon.png"     class="audio-logo active"     alt=""/>
+    <img src="assets/images/page7/bg.jpg"               width="100%"            alt=""/>
+    <img src="assets/images/page8/type.png"             class="pa type"         alt=""/>
+    <img src="assets/images/page7/giftlist.png"         class="pa giftlist"     alt=""/>
+    <img src="assets/images/page7/btn-getgift.png"      class="pa btn-getgift"  alt=""/>
+    <img src="assets/images/page7/btn-miracletour.png"  class="pa miracletour"  alt=""/>
+    <img src="assets/images/common/diaryside.png"       class="pa border"       style="height: 96%;top: 2%;z-index: 12;right: 0;" alt=""/>
+    <img src="assets/images/page1/lace1.png"            class="pa" width="100%" style="left: 0;top: 0;"/>
+    <img src="assets/images/page1/lace1.png"            class="pa" width="100%" style="left: 0;bottom: 0;-webkit-transform:  scaleY(-1);"/>
+    <img src="assets/images/page1/lace2.png"            class="lace pa"         style="left: 0;"/>
+    <img src="assets/images/page1/lace2.png"            class="lace pa"         style="right: 0;-webkit-transform:  scaleX(-1);"/>
+</div>
+
+<audio id="audio" loop="loop" src="assets/images/bgm02.mp3"></audio>
+<!-- inject:js -->
+<script src="assets/scripts/app.min.js"></script>
+<!-- endinject -->
+</body>
+</html>

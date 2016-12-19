@@ -1,0 +1,1224 @@
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.transition {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.pa {
+  position: absolute;
+}
+/*======================================================================
+      Global
+  ======================================================================*/
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
+  /* For some Androids */
+  outline: none;
+}
+
+html {
+  height: 100%;
+  font-family: "microsoft yahei", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+  max-width: 1080px;
+  margin: 0  auto;
+  background: #FCF4F7;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+p,
+a,
+button,
+span {
+  -webkit-font-smoothing: antialiased;
+}
+
+input {
+  outline: none;
+}
+
+@font-face {
+  font-family: Alix2;
+  src: url("../font/BRADHITC.TTF");
+}
+
+/* the class "content" is used for flexible plugin */
+
+/* swiper */
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* scene */
+
+.audio-logo {
+  width: 1.125rem;
+  position: absolute;
+  z-index: 999;
+  right: 0%;
+}
+
+.audio-logo.active {
+  -webkit-animation: circle 11s infinite;
+}
+
+.side {
+  height: 96%;
+  top: 2%;
+  left: 0;
+}
+
+.firstNo {
+  display: none;
+}
+
+.gril-warp {
+  background: #000;
+  z-index: 999;
+  width: 1.78125rem;
+  height: 2.65625rem;
+  left: 0.625rem;
+  position: absolute;
+  bottom: 3%;
+  background: url("../images/animation/spritesheet.png") no-repeat 100%;
+  background-position: 0 0;
+  background-size: 500% 100%;
+}
+
+.imgSliderbtn {
+  z-index: 16;
+  top: 9.84375rem;
+  width: 100%;
+  position: relative !important;
+}
+
+.imgSliderbtn img {
+  -webkit-transform: scale(1);
+}
+
+.imgSliderbtn .sliderNext {
+  right: 2%;
+  z-index: 22;
+  -webkit-transform: scaleX(-1);
+}
+
+.imgSliderbtn2 {
+  z-index: 16;
+  top: 9.84375rem;
+  width: 100%;
+  position: relative !important;
+}
+
+.imgSliderbtn2 img {
+  width: 1.21875rem;
+  -webkit-transform: scale(1);
+}
+
+.imgSliderbtn2 .sliderNext {
+  right: 2%;
+  z-index: 22;
+  -webkit-transform: scaleX(-1);
+}
+
+.n-scene {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  left: 0;
+  top: 0;
+}
+
+.n-scene .audio-logo {
+  left: 10px !important;
+  top: 10px;
+}
+
+.scene {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.scene .text {
+  position: absolute;
+  font-size: 0.9rem;
+  font-family: Alix2;
+  font-weight: bold;
+  color: #f36c94;
+  z-index: 3;
+}
+
+.scene01 .lace {
+  width: 0.75rem;
+}
+
+.scene01 .title {
+  width: 8.25rem;
+  left: 0.875rem;
+  top: 45.7%;
+}
+
+.scene01 img {
+  position: absolute;
+}
+
+.scene01 .btn {
+  top: 83.3%;
+}
+
+.scene01 .btnQQ,
+.scene01 .btnW {
+  width: 4.4375rem;
+}
+
+.scene02 img {
+  position: absolute;
+}
+
+.scene02 .type1 {
+  opacity: 0;
+  width: 3.625rem;
+  left: 0.85938rem;
+  top: 1.76563rem;
+}
+
+.scene02 .type2 {
+  opacity: 0;
+  width: 3.625rem;
+  left: 0.85938rem;
+  top: 2.5rem;
+}
+
+.scene02 .type3 {
+  opacity: 0;
+  width: 5.8125rem;
+  left: 3.28125rem;
+  top: 4.03125rem;
+}
+
+.scene02 .type4 {
+  opacity: 0;
+  width: 5.8125rem;
+  left: 3.28125rem;
+  top: 5.28125rem;
+}
+
+.scene02 .type5 {
+  opacity: 0;
+  width: 5.8125rem;
+  left: 3.28125rem;
+  top: 6.21875rem;
+}
+
+.scene02 .type6 {
+  opacity: 0;
+  width: 3.25rem;
+  left: 0.625rem;
+  top: 10.90625rem;
+}
+
+.scene02 .type7 {
+  opacity: 0;
+  width: 3.25rem;
+  left: 0.625rem;
+  top: 11.53125rem;
+}
+
+.scene02 .type8 {
+  opacity: 0;
+  width: 3.25rem;
+  left: 0.625rem;
+  top: 12.3125rem;
+}
+
+.scene02 .miao {
+  width: 2.34375rem;
+  left: 0.8125rem;
+  top: 3.75rem;
+  opacity: 0;
+}
+
+.scene02 .people {
+  width: 7.9375rem;
+  right: -16%;
+  bottom: -3%;
+  opacity: 0;
+}
+
+.scene02 .month-number {
+  left: 5.28125rem;
+  top: 3.8125rem;
+}
+
+.scene02 .day-number {
+  left: 6.5625rem;
+  top: 3.8125rem;
+}
+
+.scene02 .text-warp {
+  opacity: 0;
+}
+
+.scene03 .typeend {
+  width: 6.8125rem;
+  bottom: 2%;
+  left: 2.4375rem;
+  opacity: 0;
+}
+
+.scene03 .chapter {
+  opacity: 0;
+}
+
+.scene03 .chapter1 {
+  width: 7.90625rem;
+  top: 1.8125rem;
+  left: 0.85938rem;
+}
+
+.scene03 .chapter7 {
+  width: 7.90625rem;
+  top: 2.5rem;
+  left: 0.85938rem;
+}
+
+.scene03 .chapter8 {
+  width: 7.90625rem;
+  top: 3.28125rem;
+  left: 0.85938rem;
+}
+
+.scene03 .chapter9 {
+  width: 7.90625rem;
+  top: 4.0625rem;
+  left: 0.85938rem;
+}
+
+.scene03 .chapter10 {
+  width: 7.90625rem;
+  top: 4.84375rem;
+  left: 0.85938rem;
+}
+
+.scene03 .userMapData-warp {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  bottom: -33%;
+}
+
+.scene03 .userMapData-warp .userMapData {
+  left: 10%;
+  width: 7.5rem;
+  left: 1.40625rem;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  z-index: 6;
+}
+
+.scene03 .userMapData-warp .pin {
+  width: 1.03125rem;
+  position: absolute;
+  z-index: 11;
+  opacity: 0;
+  left: 8.21875rem;
+}
+
+.scene03 .userMapData-warp .seal {
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  -webkit-transform: rotate(-10deg);
+  width: 3.9375rem;
+  top: 0.78125rem;
+  left: 1.1875rem;
+}
+
+.scene04 .type {
+  opacity: 0;
+}
+
+.scene04 .type1 {
+  width: 7.65625rem;
+  top: 1.8125rem;
+  left: 1.65625rem;
+}
+
+.scene04 .type2 {
+  width: 6.5625rem;
+  top: 2.4375rem;
+  left: 1.8125rem;
+}
+
+.scene04 .type3 {
+  width: 6.5625rem;
+  top: 3.15625rem;
+  left: 1.8125rem;
+}
+
+.scene04 .type4 {
+  width: 6.5625rem;
+  top: 3.875rem;
+  left: 1.8125rem;
+}
+
+.scene04 .type5 {
+  width: 7.5rem;
+  top: 4.84375rem;
+  left: 1.8125rem;
+}
+
+.scene04 .type6 {
+  width: 7.5rem;
+  top: 5.625rem;
+  left: 1.8125rem;
+}
+
+.scene04 .type7 {
+  width: 6.5625rem;
+  top: 6.25rem;
+  left: 1.8125rem;
+}
+
+.scene04 .btn-next {
+  width: 2.03125rem;
+  top: 5.40625rem;
+  left: 6.96875rem;
+  z-index: 999;
+}
+
+.scene04 .text-warp {
+  opacity: 0;
+  position: absolute;
+  width: 10rem;
+  top: 3.65625rem;
+  left: 1.34375rem;
+  z-index: 15;
+}
+
+.scene04 .text-warp p {
+  font-size: 1rem;
+}
+
+.scene04 .text-warp .suit_number {
+  z-index: 15;
+  position: absolute;
+  left: 3.90625rem;
+}
+
+.scene04 .imgIsleder2-nub {
+  position: absolute;
+  width: 10rem;
+  display: block;
+  bottom: 6%;
+  left: 4.46875rem;
+}
+
+.scene04 .imgIsleder2-nub .clothes_number {
+  font-size: 0.67rem !important;
+}
+
+.scene04 .imgIsleder2-nub span {
+  padding: 0 10px;
+}
+
+.scene05 .model {
+  width: 8.75rem;
+  left: 0.875rem;
+  bottom: 0;
+  opacity: 0;
+}
+
+.scene05 .type {
+  opacity: 0;
+}
+
+.scene05 .type1 {
+  width: 8.3125rem;
+  top: 1.76563rem;
+  left: 0.875rem;
+}
+
+.scene05 .type2 {
+  width: 8.3125rem;
+  top: 2.70313rem;
+  left: 0.875rem;
+}
+
+.scene05 .type3 {
+  width: 8.3125rem;
+  top: 3.64063rem;
+  left: 0.875rem;
+}
+
+.scene05 .type4 {
+  width: 8.3125rem;
+  top: 4.65625rem;
+  left: 0.875rem;
+}
+
+.scene05 .text-warp {
+  position: absolute;
+  opacity: 0;
+  top: 2.4375rem;
+  left: 5.03125rem;
+}
+
+.scene05 .text-warp p {
+  font-size: .87rem;
+}
+
+.scene05 .text-warp .overcome-number {
+  top: 0.98438rem;
+}
+
+.scene06 .model1 {
+  bottom: -18%;
+  width: 10rem;
+  right: -25%;
+  opacity: 0;
+}
+
+.scene06 .model2 {
+  bottom: -14%;
+  width: 7.375rem;
+  left: -16%;
+  opacity: 0;
+}
+
+.scene06 .type {
+  opacity: 0;
+}
+
+.scene06 .type1 {
+  width: 8.03125rem;
+  top: 1.76563rem;
+  left: 0.875rem;
+}
+
+.scene06 .type2 {
+  width: 8.03125rem;
+  top: 2.5625rem;
+  left: 0.875rem;
+}
+
+.scene06 .type3 {
+  width: 8.03125rem;
+  top: 3.28125rem;
+  left: 0.875rem;
+}
+
+.scene06 .type4 {
+  width: 8.03125rem;
+  top: 4.125rem;
+  left: 0.875rem;
+}
+
+.scene06 .type5 {
+  width: 0.6875rem;
+  top: 5.125rem;
+  left: 6.1875rem;
+}
+
+.scene06 .type6 {
+  width: 8.03125rem;
+  top: 6.3125rem;
+  left: 0.875rem;
+}
+
+.scene06 .type7 {
+  width: 8.03125rem;
+  top: 7.15625rem;
+  left: 0.875rem;
+}
+
+.scene06 .type8 {
+  width: 8.03125rem;
+  top: 7.9375rem;
+  left: 0.875rem;
+}
+
+.scene06 .type9 {
+  width: 8.03125rem;
+  top: 8.64063rem;
+  left: 0.875rem;
+}
+
+.scene06 .text-warp {
+  position: absolute;
+  top: 1.5625rem;
+  left: 4.4375rem;
+  opacity: 0;
+}
+
+.scene06 .text-warp p {
+  font-size: 0.9rem;
+}
+
+.scene06 .text-warp .overcome-number {
+  top: 3.4375rem;
+  opacity: 0;
+  right: -1.54688rem;
+}
+
+.scene07 .border {
+  -webkit-transform: scaleX(-1);
+}
+
+.scene07 .lace {
+  width: 0.75rem;
+  z-index: 10;
+  top: 0;
+}
+
+.scene07 .type {
+  position: absolute;
+  width: 7rem;
+  top: 4.78125rem;
+  left: 1.5rem;
+}
+
+.scene07 .giftlist {
+  z-index: 12;
+  position: absolute;
+  width: 6.25rem;
+  top: 9.625rem;
+  left: 1.875rem;
+}
+
+.scene07 .btn-getgift {
+  z-index: 12;
+  position: absolute;
+  width: 5.625rem;
+  left: 2.1875rem;
+  bottom: 15%;
+}
+
+.scene07 .btn-getgift:active {
+  width: 5.3125rem;
+  left: 2.34375rem;
+}
+
+.scene07 .miracletour {
+  z-index: 12;
+  position: absolute;
+  width: 5.625rem;
+  left: 2.1875rem;
+  bottom: 5%;
+}
+
+.scene07 .miracletour:active {
+  width: 5.3125rem;
+  left: 2.34375rem;
+}
+
+.scene07 .text-warp {
+  z-index: 12;
+  position: absolute;
+  width: 6.25rem;
+  top: 4.73438rem;
+  left: 2.92188rem;
+}
+
+.scene07 .text-warp p {
+  font-size: .66rem;
+}
+
+.scene07 .text-warp .day-number {
+  left: 1.17188rem;
+}
+
+.scene07 .text-warp .hour-number {
+  font-size: .8rem;
+  top: 1.79688rem;
+  right: 1.84375rem;
+}
+
+.scene08 .border {
+  -webkit-transform: scaleX(-1);
+}
+
+.scene08 .lace {
+  width: 0.75rem;
+  z-index: 10;
+  top: 0;
+}
+
+.scene08 .type {
+  position: absolute;
+  width: 7rem;
+  top: 4.78125rem;
+  left: 1.5rem;
+}
+
+.scene08 .giftlist {
+  z-index: 12;
+  position: absolute;
+  width: 6.25rem;
+  top: 9.625rem;
+  left: 1.875rem;
+}
+
+.scene08 .btn-getgift {
+  z-index: 12;
+  position: absolute;
+  width: 5.625rem;
+  left: 2.1875rem;
+  bottom: 15%;
+}
+
+.scene08 .btn-getgift:active {
+  width: 5.3125rem;
+  left: 2.34375rem;
+}
+
+.scene08 .miracletour {
+  z-index: 12;
+  position: absolute;
+  width: 5.625rem;
+  left: 2.1875rem;
+  bottom: 5%;
+}
+
+.scene08 .miracletour:active {
+  width: 5.3125rem;
+  left: 2.34375rem;
+}
+
+/*  active scene */
+
+.scene01.active .btn {
+  -webkit-animation: bounceIn 1s forwards;
+}
+
+.scene02.active .miao {
+  -webkit-animation: wobble 1s forwards 1.5s;
+}
+
+.scene02.active .people {
+  -webkit-animation: fadeInRight 1s forwards 0.5s;
+}
+
+.scene02.active .text-warp {
+  -webkit-animation: fadeIn 1s forwards 2s;
+}
+
+.scene02.active .type1 {
+  -webkit-animation: fadeInLeft 1s forwards 0.5s;
+}
+
+.scene02.active .type2 {
+  -webkit-animation: fadeInLeft 1s forwards 1s;
+}
+
+.scene02.active .type3 {
+  -webkit-animation: fadeInLeft 1s forwards 1.5s;
+}
+
+.scene02.active .type4 {
+  -webkit-animation: fadeInLeft 1s forwards 2s;
+}
+
+.scene02.active .type5 {
+  -webkit-animation: fadeInLeft 1s forwards 2.5s;
+}
+
+.scene02.active .type6 {
+  -webkit-animation: fadeInLeft 1s forwards 3s;
+}
+
+.scene02.active .type7 {
+  -webkit-animation: fadeInLeft 1s forwards 3.5s;
+}
+
+.scene02.active .type8 {
+  -webkit-animation: fadeInLeft 1s forwards 4s;
+}
+
+.gril-warp {
+  -webkit-animation: gril-animation 2s infinite;
+}
+
+.scene03.active .typeend {
+  -webkit-animation: fadeInLeft 1s forwards 4s;
+}
+
+.scene03.active .chapter1 {
+  -webkit-animation: fadeInLeft 1s forwards 0s;
+}
+
+.scene03.active .chapter7 {
+  -webkit-animation: fadeInLeft 1s forwards 0.8s;
+}
+
+.scene03.active .chapter8 {
+  -webkit-animation: fadeInLeft 1s forwards 1.6s;
+}
+
+.scene03.active .chapter9 {
+  -webkit-animation: fadeInLeft 1s forwards 2.4s;
+}
+
+.scene03.active .chapter10 {
+  -webkit-animation: fadeInLeft 1s forwards 3.2s;
+}
+
+.scene03.active .userMapData {
+  -webkit-animation: papa1 .2s forwards 4.2s;
+}
+
+.scene03.active .seal {
+  -webkit-animation: papa  .3s forwards 4.4s;
+}
+
+.scene03.active .pin {
+  -webkit-animation: papa  .2s forwards 4.2s;
+}
+
+.scene04.active .type1 {
+  -webkit-animation: fadeInLeft 1s forwards 0.8s;
+}
+
+.scene04.active .type2 {
+  -webkit-animation: fadeInLeft 1s forwards 1.6s;
+}
+
+.scene04.active .type3 {
+  -webkit-animation: fadeInLeft 1s forwards 2.4s;
+}
+
+.scene04.active .type4 {
+  -webkit-animation: fadeInLeft 1s forwards 3.2s;
+}
+
+.scene04.active .type5 {
+  -webkit-animation: fadeInLeft 1s forwards 4s;
+}
+
+.scene04.active .type6 {
+  -webkit-animation: fadeInLeft 1s forwards 4.8s;
+}
+
+.scene04.active .type7 {
+  -webkit-animation: fadeInLeft 1s forwards 5.6s;
+}
+
+.scene04.active .text-warp {
+  -webkit-animation: fadeInLeft 1s forwards 3s;
+}
+
+.scene05.active .model {
+  -webkit-animation: fadeInLeft 1s forwards 1.7s;
+}
+
+.scene05.active .type1 {
+  -webkit-animation: fadeInLeft 1s forwards 0.8s;
+}
+
+.scene05.active .type2 {
+  -webkit-animation: fadeInLeft 1s forwards 1.6s;
+}
+
+.scene05.active .type3 {
+  -webkit-animation: fadeInLeft 1s forwards 2.4s;
+}
+
+.scene05.active .type4 {
+  -webkit-animation: fadeInLeft 1s forwards 3.2s;
+}
+
+.scene05.active .text-warp {
+  -webkit-animation: fadeIn 1s forwards 2.4s;
+}
+
+.scene06.active .model2 {
+  -webkit-animation: fadeInLeft 1s forwards 0.1s;
+}
+
+.scene06.active .model1 {
+  -webkit-animation: fadeInRight 1s forwards 0.1s;
+}
+
+.scene06.active .type1 {
+  -webkit-animation: fadeInLeft 1s forwards 0.5s;
+}
+
+.scene06.active .type2 {
+  -webkit-animation: fadeInLeft 1s forwards 1s;
+}
+
+.scene06.active .type3 {
+  -webkit-animation: fadeInLeft 1s forwards 1.5s;
+}
+
+.scene06.active .type4 {
+  -webkit-animation: fadeInLeft 1s forwards 2s;
+}
+
+.scene06.active .type5 {
+  -webkit-animation: fadeInLeft 1s forwards 2.5s;
+}
+
+.scene06.active .type6 {
+  -webkit-animation: fadeInLeft 1s forwards 3s;
+}
+
+.scene06.active .type7 {
+  -webkit-animation: fadeInLeft 1s forwards 3.5s;
+}
+
+.scene06.active .type8 {
+  -webkit-animation: fadeInLeft 1s forwards 4s;
+}
+
+.scene06.active .type9 {
+  -webkit-animation: fadeInLeft 1s forwards 4.5s;
+}
+
+.scene06.active .text-warp {
+  -webkit-animation: fadeIn 1s forwards 1.2s;
+}
+
+.scene06.active .text-warp .overcome-number {
+  -webkit-animation: fadeInLeft 1s forwards 2.8s;
+}
+
+.maozhua {
+  -webkit-animation: swing 4s forwards infinite;
+}
+
+/* swiper */
+
+/*ul wrapper*/
+
+.page3wrapper {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+  position: absolute;
+  bottom: -25%;
+}
+
+.page3wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page3wrapper ul li {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  list-style: none;
+  z-index: 10;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0px 24px 15px #B7B4B4;
+}
+
+.page3wrapper ul img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  max-width: 100%;
+  z-index: 10;
+  max-height: 100%;
+}
+
+.page4wrapper {
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+  position: absolute;
+  bottom: -9%;
+}
+
+.page4wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page4wrapper ul li {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  list-style: none;
+  z-index: 10;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.page4wrapper ul img {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  max-width: 100%;
+  z-index: 10;
+  max-height: 100%;
+}
+
+/*======================================================================
+      Responsive
+  ======================================================================*/
+
+/*======================================================================
+      Animation
+  ======================================================================*/
+
+@-webkit-keyframes bounceIn {
+  0%, 100%, 20%, 40%, 60%, 80% {
+    -webkit-transition-timing-function: cubic-bezier(0.415, 0.61, 0.655, 1);
+    transition-timing-function: cubic-bezier(0.415, 0.61, 0.655, 1);
+  }
+
+  0% {
+    -webkit-transform: scale3d(0.7, 0.7, 0.7);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    -webkit-transform: scale3d(1.01, 1.01, 1.01);
+    transform: scale3d(1.01, 1.01, 1.01);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/*the animation definition*/
+
+@-webkit-keyframes wobble {
+  0% {
+    opacity: 0;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  15% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -15deg);
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 13deg);
+    transform: translate3d(13%, 0, 0) rotate3d(0, 0, 1, 13deg);
+  }
+
+  45% {
+    -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -13deg);
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -13deg);
+  }
+
+  60% {
+    -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 12deg);
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 12deg);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -11deg);
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -11deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/*the animation definition*/
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(30%, 0, 0);
+    transform: translate3d(30%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-30%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+/*the animation definition*/
+
+/*the animation definition*/
+
+@-webkit-keyframes swing {
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(18deg);
+    -webkit-transform-origin: 60% 100%;
+  }
+
+  100% {
+    -webkit-transform: rotate(0deg);
+    -webkit-transform-origin: 60% 100%;
+  }
+}
+
+@-webkit-keyframes papa {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(10, 10, 10) rotate(-10deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: rotate(-10deg);
+  }
+}
+
+@-webkit-keyframes papa1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(10, 10, 10);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+}
+
+@-webkit-keyframes gril-animation {
+  0%, 19.99% {
+    background-position: 0% 0;
+  }
+
+  20%, 29.99% {
+    background-position: 25% 0;
+  }
+
+  30%, 39.99% {
+    background-position: 50% 0;
+  }
+
+  40%, 49.99% {
+    background-position: 75% 0;
+  }
+
+  50%, 59.99% {
+    background-position: 100% 0;
+  }
+
+  60%, 69.99% {
+    background-position: 75% 0;
+  }
+
+  70%, 79.99% {
+    background-position: 50% 0;
+  }
+
+  80%, 89.99% {
+    background-position: 25% 0;
+  }
+
+  90%, 100% {
+    background-position: 0% 0;
+  }
+}
+
+@-webkit-keyframes circle {
+  from {
+    -webkit-transform: rotateZ(-360deg);
+  }
+
+  to {
+    -webkit-transform: rotateZ(0deg);
+  }
+}
